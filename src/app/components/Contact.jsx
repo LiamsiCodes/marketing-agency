@@ -9,7 +9,7 @@ import Aos from 'aos'
 function Contact() {
   useEffect(()=>{
     Aos.init({duration:1700})
-   },[])
+   },[]);
 
    function submitForm(e){
       e.preventDefault();
@@ -17,7 +17,7 @@ function Contact() {
       .then(res=>{
         console.log(res)
       }).catch(err=>{console.log(err)});
-   }
+   };
 
   return (
     <div id='contact' className='w-full mt-6 bg-[#6722B5] h-full'>
